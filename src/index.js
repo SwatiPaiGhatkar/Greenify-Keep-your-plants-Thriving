@@ -17,9 +17,7 @@ function generateInformation(event) {
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   let careGuideElement = document.querySelector("#care-guide");
   careGuideElement.innerHTML = `<div class= "blink"> ⌛Generating a care plan for ${userInput.value}....</div>`;
-  console.log("Generating information..");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
+
   //Make a call to API and add axios
   axios.get(apiUrl).then(displayGuide);
   // display the guide
