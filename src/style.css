@@ -1,3 +1,79 @@
+body {
+  background-color: #ebe7e8;
+  font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+header {
+  margin-bottom: 30px;
+}
+
 h1 {
-  color: blueviolet;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #224822;
+  text-align: center;
+}
+
+form {
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 8px 20px 60px #4a684a;
+  margin-bottom: 40px;
+}
+.plant-input {
+  padding: 16px;
+  border: 1px #224822 solid;
+  border-radius: 20px;
+  width: 70%;
+  font-size: 15px;
+  line-height: 20px;
+}
+.submit-button {
+  margin-left: 10px;
+  background-color: #204822;
+  color: #ebe7e8;
+  border: none;
+  border-radius: 20px;
+  padding: 14px 24px;
+  width: 120px;
+  font-size: medium;
+  font-weight: 300px;
+}
+.plant-guide-info {
+  font-size: 15px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgb(29, 29, 31);
+  box-shadow: 8px 20px 60px #4a684a;
+}
+footer {
+  text-align: center;
+  font-size: small;
+  margin-top: 30px;
+}
+a {
+  color: #204822;
+  font-weight: bold;
+}
+.background-image {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/830/original/greenify-background-image.jpeg?1749610692");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
