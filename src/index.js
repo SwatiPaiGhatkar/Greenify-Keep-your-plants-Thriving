@@ -15,7 +15,8 @@ function generateInformation(event) {
   let prompt = `User instructions: Generate a care guide about ${userInput.value}`;
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
-
+  let careGuideElement = document.querySelector("#care-guide");
+  careGuideElement.innerHTML = `<div class= "blink"> ⌛Generating a care plan for ${userInput.value}....</div>`;
   console.log("Generating information..");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
